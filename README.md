@@ -3,8 +3,7 @@
 this project is a simple test to send and recieve a message with a qeue 
 
 
-
-## ***Do the following steps in order***
+## ***Do the following steps in order for "Heloo world"***
 
 - activate the virtual environment
 
