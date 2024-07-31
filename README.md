@@ -3,7 +3,9 @@
 this project is a simple test to send and recieve a message with a qeue 
 
 
+
 ## ***Do the following steps in order for "Heloo world"***
+
 
 - activate the virtual environment
 
@@ -30,6 +32,13 @@ this project is a simple test to send and recieve a message with a qeue
 - give the user 'root' virtual host access (/)
 ```bash
   sudo rabbitmqctl set_permissions -p / root ".*" ".*" ".*" 
+```
+
+ 
+- Change directory to HelloWorld
+
+```bash
+  cd HelloWorld/  
 ```
 
  
