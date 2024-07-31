@@ -1,12 +1,15 @@
 ![RabbitMQ Logo](https://www.rabbitmq.com/img/rabbitmq-logo-with-name.svg)
 # MessageBroker_RabbitMQ
-this project is a simple test to send and recieve a message with a qeue 
+this is RabbitMQ tutorial with python, step by step of documentation.
 
 
 
 ## ***Do the following steps in order for "Hello world"***
 
 ![RabbitMQ Logo](https://solace.com/wp-content/uploads/2015/10/mapping-amqp-to-solace_1.png)
+
+
+
 
 
 - activate the virtual environment
@@ -24,16 +27,16 @@ this project is a simple test to send and recieve a message with a qeue
 ```bash
   sudo rabbitmqctl add_user "root" "root"   
 ```
+## Listing queues
+You may wish to see what queues RabbitMQ has and how many messages are in them. You can do it (as a privileged user) using the rabbitmqctl tool:
 
-- give the user 'root' administrator permission
 ```bash
-  sudo rabbitmqctl set_user_tags root administrator 
+  sudo rabbitmqctl list_queues   
 ```
 
-
-- give the user 'root' virtual host access (/)
+On Windows, omit the sudo:
 ```bash
-  sudo rabbitmqctl set_permissions -p / root ".*" ".*" ".*" 
+  rabbitmqctl.bat list_queues
 ```
 
  

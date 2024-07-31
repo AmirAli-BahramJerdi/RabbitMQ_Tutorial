@@ -1,6 +1,13 @@
 import pika
+
+'''  
+        ******* 
+P ----> *hello*
+        *******
+'''
+
 # sender as publisher
-connection = pika.BlockingConnection(
+connection = pika.BlockingConnection( # establish a connection with RabbitMQ server.
     # ConnectionParameters for rabbitmq 
     parameters=pika.ConnectionParameters(host='localhost')
 )
@@ -12,7 +19,7 @@ its name or IP address here.
 '''
 
 
-channel.queue_declare(queue='hello') # making queue for message broker named 'hello'
+channel.queue_declare(queue='hello') # making recipient queue for message broker named 'hello'
 '''
 A Channel is the primary communication method for interacting with RabbitMQ. 
 It is recommended that you do not directly invoke the creation of a channel 
@@ -26,8 +33,8 @@ At this point we're ready to send a message. Our first message will just
 contain a string "Hello World!" and we want to send it to our hello queue.
 '''
 channel.basic_publish(
-    exchange='',
-    routing_key='hello', # the name must be the same as queue 
+    exchange='', # it allows us to specify exactly to which queue the message should go
+    routing_key='hello', # The queue name needs to be specified in the routing_key parameter 
     body='Hello World!'
 )
 print(" [x] Sent 'Hello World!'")
