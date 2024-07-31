@@ -4,7 +4,7 @@ this project is a simple test to send and recieve a message with a qeue
 
 
 
-## ***Do the following steps in order for "Helo world"***
+## ***Do the following steps in order for "Hello world"***
 
 ![RabbitMQ Logo](https://solace.com/wp-content/uploads/2015/10/mapping-amqp-to-solace_1.png)
 
