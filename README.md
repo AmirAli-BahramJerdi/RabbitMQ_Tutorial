@@ -23,10 +23,6 @@ this is RabbitMQ tutorial with python, step by step of documentation.
   pip install -r requirements.txt
 ```
 
-- create an admin that username='root' and password='root'
-```bash
-  sudo rabbitmqctl add_user "root" "root"   
-```
 ## Listing queues
 You may wish to see what queues RabbitMQ has and how many messages are in them. You can do it (as a privileged user) using the rabbitmqctl tool:
 
